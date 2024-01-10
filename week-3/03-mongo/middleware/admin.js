@@ -10,7 +10,10 @@ function adminMiddleware(req, res, next) {
     const password = req.headers.password;
 
 
-    Admin.findOne({ username: username })
+    Admin.findOne({
+        username: username,
+        password: password
+    })
         .then((admin) => {
             if (!admin || admin.password !== password) {
                 res.status(404).send("Invalid admin details");

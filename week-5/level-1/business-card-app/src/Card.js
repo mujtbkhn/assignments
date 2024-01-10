@@ -1,6 +1,7 @@
 import React from "react"
 
-const Card = ({ name, description, socialMedia, interests }) => {
+const Card = ({ _id, name, description, socialMedia, interests, onDelete }) => {
+
     return (
         <>
             <div>
@@ -19,6 +20,8 @@ const Card = ({ name, description, socialMedia, interests }) => {
                 <div>
                     {socialMedia.linkedin && <a href={socialMedia.linkedin}>LinkedIn</a>}
                     {socialMedia.twitter && <a href={socialMedia.twitter}>Twitter</a>}
+                </div>
+                <div>
                 </div>
             </div>
         </>
