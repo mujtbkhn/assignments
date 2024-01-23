@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ProfileCard } from "./profileCard";
 import { Background } from "./Background";
 import { GithubInfoCard } from "./githubInfoCard";
+import { Para } from "./para_generator/para";
 
 function App() {
   const profileCardProps = {
@@ -18,6 +19,7 @@ function App() {
       {/* <ProfileCard {...profileCardProps}/> */}
       {/* <Background />  */}
       {/* <GithubInfoCard /> */}
+      <Para />
     </>
   );
 }
